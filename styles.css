@@ -1,7 +1,211 @@
-.material-icons {
-    color: blue; 
+/*General*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-color: aqua;
+  background: #181719;
+  color: #ffffff;
+  font-family: "Montserrat", serif;
+}
+
+.page-container {
+  display: flex;
+  max-width: 768px;
+  flex-direction: column;
+  margin: 0 auto;
+  /* border: 2px solid red; */
+}
+
+header,
+.intro-section,
+.bio-section {
+  margin: 0 12px;
+  display: flex;
+}
+
+/*header bar*/
+
+header {
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid green; */
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 19px;
+  margin-bottom: 38px;
+}
+
+.material-icons.md-46 {
+  color: white;
+  font-family: "Material Icons";
+  font-size: 46px;
+  margin-right: -5px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logo > a {
+  font-family: "Crimson Pro", serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.logo {
+  padding: 8px 10px;
+  border: 2px solid white;
+}
+
+/*intro message section*/
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid violet; */
+}
+
+.intro-section {
+  display: flex;
+  /* border: 2px solid gold; */
+  flex-direction: column;
+  height: 240px;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-family: "Lora", serif;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  max-width: 250px;
+}
+
+.material-icons.md-36 {
+  color: #ffffff;
+  font-size: 18.79px;
+  line-height: 15px;
+  font-weight: 600;
+  /* border: 2px solid greenyellow; */
+  position: relative;
+  top: 5px;
+  left: 10px;
+}
+
+.btn {
+  position: relative;
+  padding: 10px 0;
+  /* border: 2px solid indianred; */
+  width: 150px;
+}
+
+.btn > a {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+/* bio section*/
+
+.bio-section {
+  flex-direction: column;
+  /* border: 2px solid aqua; */
+}
+
+.bio-container {
+  display: flex;
+  position: relative;
+  height: 138px;
+  bottom: 63px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 17px 0 25px 19px;
+  z-index: 1000;
+  min-width: 200px;
+  margin-left: 40px;
+  margin-right: 11px;
+  /* border: 2px solid cornflowerblue; */
+  background-color: #181719;
+  box-shadow: 0 8px 8px -8px #272727;
+}
+
+.img-container,
+.bio {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 2px solid orange; */
+  margin-left: 15px;
+  padding: 5px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.bio > img {
+  border-radius: 50%;
+  max-width: 36.59px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #828282;
+}
+
+.creditation {
+  font-family: "Lora", serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  margin-top: 15px;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  height: 54px;
+  /* border: 2px solid mediumslateblue; */
+}
+
+.signature {
+  border-top: 1px solid #a9a9a9;
+  padding: 20px;
+}
+
+.sign {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 17px;
+  color: #a9a9a9;
 }
